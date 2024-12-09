@@ -2,8 +2,8 @@
 This progect uses UNet architecture. See *Ronneberger O., Fischer P., Brox T. U-Net: Convolutional Networks for Biomedical Image Segmentation. CoRR, 2015. URL: https://arxiv.org/abs/1505.04597. Ronneberger O., Fischer P., Brox T. U-Net: Convolutional Networks for Biomedical Image Segmentation. CoRR, 2015. URL: https://arxiv.org/abs/1505.04597.*
 ## Setup and Run Instructions
 
-### Step 1: Unpack the Model Checkpoint
-Unzip the `model_checkpoint.zip` file into the repository directory. This contains the project's model.
+### Step 1:Download the Model Checkpoint
+Download the `model_checkpoint.pth` file into the repository directory. This contains the project's model. Reference for downlad: [google drive](https://drive.google.com/drive/u/0/folders/1sZe0mmBQG9SMiYrKbWoTLHRMpXM93Fg-)
 
 ### Step 2: Download and Prepare the Dataset
 Download the dataset from the website [Nails Segmentation Dataset](https://www.kaggle.com/datasets/vpapenko/nails-segmentation) and place it in the repository directory. The dataset folder should contain two subfolders: `images` (containing nail images) and `labels` (containing corresponding labels).
