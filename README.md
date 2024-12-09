@@ -1,5 +1,5 @@
 # Nail Segmentation Project
-# This progect uses UNet architecture. See *Ronneberger O., Fischer P., Brox T. U-Net: Convolutional Networks for Biomedical Image Segmentation. CoRR, 2015. URL: https://arxiv.org/abs/1505.04597. Ronneberger O., Fischer P., Brox T. U-Net: Convolutional Networks for Biomedical Image Segmentation. CoRR, 2015. URL: https://arxiv.org/abs/1505.04597.*
+This progect uses UNet architecture. See *Ronneberger O., Fischer P., Brox T. U-Net: Convolutional Networks for Biomedical Image Segmentation. CoRR, 2015. URL: https://arxiv.org/abs/1505.04597. Ronneberger O., Fischer P., Brox T. U-Net: Convolutional Networks for Biomedical Image Segmentation. CoRR, 2015. URL: https://arxiv.org/abs/1505.04597.*
 ## Setup and Run Instructions
 
 ### Step 1: Unpack the Model Checkpoint
@@ -19,7 +19,7 @@ Open the `nail_segmentation_presentation.ipynb` file to view the details of the 
 
 **Note:** Make sure to update the paths in the `config.yaml` file to match your local directory structure. Also, ensure that the dataset is correctly downloaded and placed in the repository directory.
 
-### Losses during training: IoU metric and BCEWithLogitsLoss
+## Losses during training: IoU metric and BCEWithLogitsLoss
 ![alt text](IoU.png) ![alt text](losses.png) 
-### Test of the model
+## Test of the model
 ![alt text](test.png)
