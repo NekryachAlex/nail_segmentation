@@ -1,0 +1,11 @@
+---
+network_config_path: 'D:/dlcourse_ai/nail_segmentation/model_checkpoint.pth'
+
+device: 'cpu'
+num_epoch: 500
+
+images_path: "d:/dlcourse_ai/nail_segmentation/data/images/"
+labels_path: "d:/dlcourse_ai/nail_segmentation/data/labels/"
+
+loss_path: "d:/dlcourse_ai/nail_segmentation/loss.png"
+iou_path: "d:/dlcourse_ai/nail_segmentation/IOU.png"

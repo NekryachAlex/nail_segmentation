@@ -1,23 +1,25 @@
-# Сегментация ногтей
+# Nail Segmentation Project
+# This progect uses UNet architecture. See *Ronneberger O., Fischer P., Brox T. U-Net: Convolutional Networks for Biomedical Image Segmentation. CoRR, 2015. URL: https://arxiv.org/abs/1505.04597. Ronneberger O., Fischer P., Brox T. U-Net: Convolutional Networks for Biomedical Image Segmentation. CoRR, 2015. URL: https://arxiv.org/abs/1505.04597.*
+## Setup and Run Instructions
 
-## Описание
-Этот проект представляет собой решение задачи сегментации ногтей с помощью нейронной сети **U-Net**. Цель проекта - разработать модель, которая может точно определить границы ногтей на изображениях.
+### Step 1: Unpack the Model Checkpoint
+Unzip the `model_checkpoint.zip` file into the repository directory. This contains the project's model.
 
-## Архитектура модели
-Модель основана на архитектуре U-Net, которая состоит из четырех этапов свертки и четырех этапов расширения. Модель принимает на вход изображение размером 224x224x1 и выдает маску размером 224x224x1.
+### Step 2: Download and Prepare the Dataset
+Download the dataset from the website [Nails Segmentation Dataset](https://www.kaggle.com/datasets/vpapenko/nails-segmentation) and place it in the repository directory. The dataset folder should contain two subfolders: `images` (containing nail images) and `labels` (containing corresponding labels).
 
-## Данные
-Данные для обучения и тестирования были взяты из набора данных "Nails Segmentation" и состоят из изображений ногтей и соответствующих им масок.
+### Step 3: Configure the Settings
+Edit the `config.yaml` file to specify the absolute path to the dataset and the paths where you want to save the loss function plots, IoU plots, and the trained model.
 
-## Обучение
-Модель была обучена на 100 эпохах с использованием функции потерь BCEWithLogitsLoss и оптимизатора Adam с шагом обучения 0.0001.
+### Step 4: Run the Training Script
+Run the `Launch.sh` script to start the training process. This script will check for required libraries and launch the training.
 
-## Оценка 
-Модель была оценена на тестовом наборе данных с использованием метрик IoU и точности.
+### Step 5: Explore the Model Training and Testing
+Open the `nail_segmentation_presentation.ipynb` file to view the details of the model training and testing on the entire dataset.
 
-## Зависимости:
-PyTorch
-Torchvision
-Numpy
-Matplotlib
-Scikit-image
+**Note:** Make sure to update the paths in the `config.yaml` file to match your local directory structure. Also, ensure that the dataset is correctly downloaded and placed in the repository directory.
+
+### Losses during training: IoU metric and BCEWithLogitsLoss
+![alt text](IoU.png) ![alt text](losses.png) 
+### Test of the model
+![alt text](test.png)
